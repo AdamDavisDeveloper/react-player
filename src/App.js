@@ -1,7 +1,22 @@
+//React Imports
+import {useState} from "react";
+//Styles
+import "./styles/App.scss";
+//Compontents
+import Player from "./compontents/Player";
+import Song from "./compontents/Song";
+//Import Util.js Chillhop Songs
+import data from "./util";
+
 function App() {
+  //State
+  const [songs, setSongs] = useState(data());
+  const [currentSong, setCurrentSong] = useState(songs[1]);
+  const [isPlaying, setIsPlaying] = useState(false);
   return (
     <div className="App">
-      <h1>Music Player</h1>
+      <Song currentSong={currentSong} />
+      <Player setIsPlaying={setIsPlaying} isPlaying={isPlaying} currentSong={currentSong} />
     </div>
   );
 }
