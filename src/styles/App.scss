@@ -6,7 +6,9 @@
 
 body {
   font-family: "Lato", sans-serif;
-  // background: rgb(218, 218, 255);
+  background: url(../img/bg.jpg);
+  object-fit: cover;
+  background-position: center;
 }
 
 h1,

@@ -1,4 +1,5 @@
 .song-container {
+  position: relative;
   min-height: 60vh;
   display: flex;
   align-items: center;
@@ -18,6 +19,21 @@
   }
 }
 
+.song-playing {
+  animation: rotation 35s infinite linear;
+}
+
+/* Animations */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Mobile */
 @media screen and (max-width: 768px) {
   .song-container {
     min-height: 40vh;
