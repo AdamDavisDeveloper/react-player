@@ -17,3 +17,16 @@
     font-size: 1rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .song-container {
+    min-height: 40vh;
+    margin-top: 2rem;
+    img {
+      width: 60%;
+    }
+    h2 {
+      padding-top: 1rem;
+    }
+  }
+}
