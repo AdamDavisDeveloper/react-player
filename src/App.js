@@ -5,6 +5,7 @@ import "./styles/App.scss";
 //Compontents
 import Player from "./compontents/Player";
 import Song from "./compontents/Song";
+import Library from "./compontents/Library"
 //Import Util.js Chillhop Songs
 import data from "./util";
 
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <Song currentSong={currentSong} />
       <Player setIsPlaying={setIsPlaying} isPlaying={isPlaying} currentSong={currentSong} />
+      <Library songs={songs} />
     </div>
   );
 }
